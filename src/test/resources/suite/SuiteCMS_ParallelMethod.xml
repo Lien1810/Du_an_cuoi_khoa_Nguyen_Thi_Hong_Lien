@@ -1,0 +1,41 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Parallel method executor CMS " verbose="1" >
+    <test name="Flow test" >
+        <parameter name="BROWSER" value="chrome"> </parameter>
+        <classes>
+            <class name="BT_AT04.test.FlowTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Login" parallel="methods">
+        <classes>
+            <class name="BT_AT04.test.LoginTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Dashboard" parallel="methods">
+        <classes>
+            <class name="BT_AT04.test.DashboardTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Brand" parallel="methods">
+        <classes>
+            <class name="BT_AT04.test.BrandTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Category">
+        <classes>
+            <class name="BT_AT04.test.CategoryTest"> </class>
+        </classes>
+    </test>
+
+    <test name="Product" >
+        <classes>
+            <class name="BT_AT04.test.ProductTest"> </class>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="FlowTest" verbose="1" >
+
+    <test name="Flow" >
+        <classes>
+            <class name="BT_AT04.test.FlowTest"> </class>
+        </classes>
+    </test>
+</suite>
