@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ProductTest" verbose="1" parallel="methods">
+
+    <test name="Add product success,Add product fail, Edit product, Delete product">
+        <classes>
+            <class name="BT_AT04.test.ProductTest">
+                <methods>
+                    <include name="testAddNewProduct_Success"/>
+                    <include name="testAddNewProductFail_withNullProductName"/>
+                    <include name="testEditProduct_Success"/>
+                    <include name="testDeleteProduct_Success"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
